@@ -37,8 +37,7 @@ Run `yarn report` to get a report of bundle size which helps you:
 
 Your app is now offline-ready (only in production bundle), which means you can visit it without network.
 
-Here we use a default [manifest.json](./static/manifest.json) to configurure your pwa, for example, to enable *Add to Home Screen* feature on Android. It will be copied directly to `./dist/manifest.json`.
-
+Here we use a default [manifest.json](./static/manifest.json) to configurure your pwa, for example, to enable _Add to Home Screen_ feature on Android. It will be copied directly to `./dist/manifest.json`.
 
 For all the available options, please head to [poi-preset-offline](https://github.com/egoist/poi/tree/master/packages/poi-preset-offline#api).
 
