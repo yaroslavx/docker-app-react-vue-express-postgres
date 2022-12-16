@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Client</h1>
+      <h1>New Client</h1>
       <h2>{settings.greetings}</h2>
       <TodoForm />
       <TodoList />

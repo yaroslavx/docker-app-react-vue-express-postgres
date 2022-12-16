@@ -1,8 +1,8 @@
 ARG NODE_VERSION=16.13.1
 
-FROM yaroslavx/yaroslavx/docker-app_client AS client
+FROM yaroslavx/docker-app_client AS client
 
-FROM yaroslavx/yaroslavx/docker-app_admin AS admin
+FROM yaroslavx/docker-app_admin AS admin
 
 FROM node:$NODE_VERSION
 
@@ -16,7 +16,7 @@ COPY . .
 
 COPY --from=client /client/build /app/client/build
 
-COPY --from=admin /admin/build /app/admin/build
+COPY --from=admin /admin/dist /app/admin/dist
 
 EXPOSE 5000
 
